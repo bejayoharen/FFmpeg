@@ -11531,6 +11531,13 @@ The option must be an integer value in the range [0,5]. Default is @var{2}.
 @item diff_mode
 If set, define the zone to process
 
+@item threshold
+Sets the alpha threshold for transparency. Alpha values above this threshold
+will be treated as completely opaque, and values below this threshold will be
+treated as completely transparent.
+
+The option must be an integer value in the range [0,255]. Default is 128.
+
 @table @samp
 @item rectangle
 Only the changing rectangle will be reprocessed. This is similar to GIF
