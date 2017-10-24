@@ -1607,6 +1607,12 @@ enum AVPacketSideDataType {
     AV_PKT_DATA_A53_CC,
 
     /**
+     * The disposal method that should be used with the frame. If missing,
+     * the frame will not be disposed. This contains exactly one byte.
+     */
+    AV_PKT_DATA_GIF_FRAME_DISPOSAL,
+
+    /**
      * The number of side data elements (in fact a bit more than it).
      * This is not part of the public API/ABI in the sense that it may
      * change when new side data types are added.
